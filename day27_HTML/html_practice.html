@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics Tutorial</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f9fc;
+        }
+        header, footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .example-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: #fafafa;
+        }
+        .center { text-align: center; }
+        .right { text-align: right; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HEADER TAG -->
+    <header>
+        <h1>🌐 HTML Tutorial Page</h1>
+    </header>
+
+    <main>
+
+        <!-- 1. HTML INTRODUCTION -->
+        <section id="intro">
+            <h2>1️⃣ HTML Introduction & Basic Structure</h2>
+            <p>HTML stands for <b>HyperText Markup Language</b>. It is used to create the structure of web pages.</p>
+
+            <div class="example-box">
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </div>
+        </section>
+
+        <!-- 2. TEXT ALIGNMENT -->
+        <section id="alignment">
+            <h2>2️⃣ Text Alignment</h2>
+            <p class="left">This text is aligned to the <b>left</b> (default).</p>
+            <p class="center">This text is <b>center aligned</b>.</p>
+            <p class="right">This text is aligned to the <b>right</b>.</p>
+        </section>
+
+        <!-- 3. BASIC TAGS -->
+        <section id="basic-tags">
+            <h2>3️⃣ Basic Tags</h2>
+            <p><b>Bold text</b></p>
+            <p><i>Italic text</i></p>
+            <p><u>Underlined text</u></p>
+            <p><mark>Highlighted text</mark></p>
+            <p><small>Small text</small></p>
+            <p>This is a <strong>semantic bold</strong> tag.</p>
+            <p>This is an <em>emphasized</em> tag.</p>
+        </section>
+
+        <!-- 4. ATTRIBUTES (Images, Links, Audio, Video) -->
+        <section id="media">
+            <h2>4️⃣ HTML Attributes: Image, Links, Audio, and Video</h2>
+
+            <h3>🔗 Anchor (Hyperlink)</h3>
+            <a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+
+            <h3>🖼️ Image</h3>
+            <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Sample Image" width="200">
+
+            <h3>🎵 Audio</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            </audio>
+
+            <h3>🎥 Video</h3>
+            <video width="300" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- 5. LISTS & FORM INPUTS -->
+        <section id="forms">
+            <h2>5️⃣ Lists and Form Elements</h2>
+
+            <h3>🔹 Ordered List</h3>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <h3>🔹 Unordered List</h3>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Cherry</li>
+            </ul>
+
+            <h3>🔹 Form Elements</h3>
+            <form>
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name"><br><br>
+
+                <label>Age:</label>
+                <input type="number" min="1" max="100"><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female<br><br>
+
+                <label>Hobbies:</label>
+                <input type="checkbox"> Reading
+                <input type="checkbox"> Coding<br><br>
+
+                <label>Date of Birth:</label>
+                <input type="date"><br><br>
+
+                <label>Range (Slider):</label>
+                <input type="range" min="0" max="100"><br><br>
+
+                <label>Choose Country:</label>
+                <select>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- 6. LAYOUT TAGS -->
+        <section id="layout">
+            <h2>6️⃣ Layout Tags: header, footer, main, section, nav, div, span</h2>
+            <nav style="background:#e3f2fd; padding:10px;">
+                <a href="#intro">Intro</a> |
+                <a href="#forms">Forms</a> |
+                <a href="#table">Tables</a>
+            </nav>
+
+            <div class="example-box">
+                <p>This <span style="color:blue;">span</span> is used to style part of a text inline.</p>
+            </div>
+        </section>
+
+        <!-- 7. TABLES & IFRAMES -->
+        <section id="table">
+            <h2>7️⃣ Tables & Iframe</h2>
+
+            <table border="1" cellpadding="5">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+                <tr>
+                    <td>Neha</td>
+                    <td>22</td>
+                    <td>Dharwad</td>
+                </tr>
+                <tr>
+                    <td>Pooja</td>
+                    <td>23</td>
+                    <td>Bangalore</td>
+                </tr>
+            </table>
+
+            <h3>🌍 Embedded Website (iframe)</h3>
+            <iframe src="https://www.wikipedia.org" width="400" height="200"></iframe>
+        </section>
+
+    </main>
+
+    <!-- 8. FOOTER -->
+    <footer>
+        <p>&copy; 2025 HTML Tutorial by Neha</p>
+    </footer>
+
+</body>
+</html>

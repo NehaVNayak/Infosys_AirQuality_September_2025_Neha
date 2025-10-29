@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beautiful Calculator</title>
+<style>
+    /* Page styling */
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #6dd5fa, #2980b9);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Calculator container */
+    .calculator {
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Display box */
+    input[type="text"] {
+        width: 210px;
+        height: 45px;
+        border: none;
+        outline: none;
+        background: #f0f4f8;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        text-align: right;
+        padding-right: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        box-shadow: inset 2px 2px 5px #ccc, inset -2px -2px 5px #fff;
+    }
+
+    /* Buttons */
+    input[type="button"] {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #fff;
+    }
+
+    /* Colors for buttons */
+    input[value="C"] { background-color: #e74c3c; }
+    input[value="="] { background-color: #27ae60; }
+    input[value="+"] { background-color: #f39c12; }
+    input[value="-"] { background-color: #f39c12; }
+    input[value="*"] { background-color: #f39c12; }
+    input[value="/"] { background-color: #f39c12; }
+    input[value="."] { background-color: #9b59b6; }
+    input[type="button"]:not([value="C"]):not([value="="]):not([value="+"]):not([value="-"]):not([value="*"]):not([value="/"]):not([value="."]) {
+        background-color: #3498db;
+    }
+
+    /* Hover effects */
+    input[type="button"]:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+</style>
+</head>
+<body>
+
+<div class="calculator">
+    <form name="calc">
+        <input type="text" name="display" id="display" readonly><br>
+
+        <input type="button" value="1" onclick="calc.display.value += '1'">
+        <input type="button" value="2" onclick="calc.display.value += '2'">
+        <input type="button" value="3" onclick="calc.display.value += '3'">
+        <input type="button" value="/" onclick="calc.display.value += '/'"><br>
+
+        <input type="button" value="4" onclick="calc.display.value += '4'">
+        <input type="button" value="5" onclick="calc.display.value += '5'">
+        <input type="button" value="6" onclick="calc.display.value += '6'">
+        <input type="button" value="*" onclick="calc.display.value += '*'"><br>
+
+        <input type="button" value="7" onclick="calc.display.value += '7'">
+        <input type="button" value="8" onclick="calc.display.value += '8'">
+        <input type="button" value="9" onclick="calc.display.value += '9'">
+        <input type="button" value="-" onclick="calc.display.value += '-'"><br>
+
+        <input type="button" value="0" onclick="calc.display.value += '0'">
+        <input type="button" value="." onclick="calc.display.value += '.'">
+        <input type="button" value="=" onclick="calc.display.value = eval(calc.display.value)">
+        <input type="button" value="+" onclick="calc.display.value += '+'"><br>
+
+        <input type="button" value="C" onclick="calc.display.value = ''">
+    </form>
+</div>
+
+</body>
+</html>
