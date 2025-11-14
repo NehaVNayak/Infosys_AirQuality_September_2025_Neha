@@ -29,6 +29,7 @@ The dashboard consists of **4 Milestone Dashboards**:
 
 ## 📂 Project Structure
 
+```
 AirAware/
 │
 ├── main_dashboard.py
@@ -37,9 +38,10 @@ AirAware/
 ├── milestone3_dashboard.py
 ├── milestone4_dashboard.py
 ├── data/
-│ └── air_quality.csv
+│   └── air_quality.csv
 ├── requirements.txt
 └── README.md
+```
 
 
 ## 🛠️ Features
