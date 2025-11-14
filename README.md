@@ -112,9 +112,6 @@ The project uses city-wise daily air quality data with features like:
 - AQI  
 - Date & Time  
 
-Dataset is stored under:
-
-
 ## 🔮 Forecasting Models Used
 
 ### ✔️ Prophet Model  
@@ -164,31 +161,25 @@ To deploy your own version:
 ![Dashboard 4](images/dashboard4.png)
 ```
 
-🧠 Future Enhancements
+## 🧠 Future Enhancements
+- Real-time AQI API integration  
+- Mobile-friendly version  
+- Geo-mapping of cities (Folium / Mapbox)  
+- LSTM / Deep learning models  
+- User login + personalized alerts  
 
-Real-time AQI API integration
+---
 
-Mobile-friendly version
+## 📚 References
+- WHO Air Quality Guidelines  
+- CPCB Dataset  
+- Streamlit Documentation  
+- Prophet Official Docs  
+- Statsmodels ARIMA Docs  
 
-Geo-mapping of cities (Folium / Mapbox)
+---
 
-LSTM/Deep learning models
+## 👩‍💻 Author
+**Neha Nayak**  
+*Air Quality Prediction & Visualization Internship Project – 2025*
 
-User login + personalized alerts
-
-📚 References
-
-WHO Air Quality Guidelines
-
-CPCB Dataset
-
-Streamlit Documentation
-
-Prophet Official Docs
-
-Statsmodels ARIMA Docs
-
-👩‍💻 Author
-
-Neha Nayak
-Air Quality Prediction & Visualization Internship Project – 2025
