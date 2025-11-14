@@ -1,4 +1,4 @@
-# 🌫️ AirAware – Smart Air Quality Prediction & Visualization Dashboard
+<img width="1347" height="215" alt="image" src="https://github.com/user-attachments/assets/b33c50c6-bcfa-4371-b255-06d77fab85b1" /># 🌫️ AirAware – Smart Air Quality Prediction & Visualization Dashboard
 
 AirAware is an interactive, Streamlit-based web application designed to analyze, visualize, and forecast Air Quality Index (AQI) across multiple cities.  
 The project uses **Prophet** and **ARIMA** models for forecasting and provides clean dashboards for pollutant trends, AQI categories, and predictions.
@@ -41,10 +41,6 @@ AirAware/
 ├── requirements.txt
 └── README.md
 
-yaml
-Copy code
-
----
 
 ## 🛠️ Features
 
