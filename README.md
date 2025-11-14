@@ -1,4 +1,3 @@
-```md
 # 🌫️ AirAware – Smart Air Quality Prediction & Visualization Dashboard
 
 AirAware is an interactive, Streamlit-based web application designed to analyze, visualize, and forecast Air Quality Index (AQI) across multiple cities.  
