@@ -1,36 +1,33 @@
-🌫️ AirAware – Smart Air Quality Prediction & Visualization Dashboard
+# 🌫️ AirAware – Smart Air Quality Prediction & Visualization Dashboard
 
-AirAware is an interactive, Streamlit-based web application designed to analyze, visualize, and forecast Air Quality Index (AQI) across multiple cities.
-The project uses Prophet and ARIMA models for forecasting and provides clean dashboards for pollutant trends, AQI categories, and predictions.
+AirAware is an interactive, Streamlit-based web application designed to analyze, visualize, and forecast Air Quality Index (AQI) across multiple cities.  
+The project uses **Prophet** and **ARIMA** models for forecasting and provides clean dashboards for pollutant trends, AQI categories, and predictions.
 
-🔗 Live Demo:
+🔗 **Live Demo:**  
 https://airquality-ciq7gthdhn5n6utyrxsecm.streamlit.app
 
-📘 Overview
+---
+
+## 📘 Overview
 
 AirAware helps users understand:
 
-Historical pollution patterns
+- Historical pollution patterns  
+- Dominant pollutants for each region  
+- AQI categories (Good, Moderate, Poor, etc.)  
+- Forecasted AQI for upcoming days  
+- Trend shifts and seasonal variations  
 
-Dominant pollutants for each region
+The dashboard consists of **4 Milestone Dashboards**:
+1. Data Cleaning & Visualization  
+2. AQI Computation & Category Insights  
+3. Prophet-based Forecasting (Dashboard 1 & 2)  
+4. ARIMA Forecast + Alerts (Dashboard 3 & 4)
 
-AQI categories (Good, Moderate, Poor, etc.)
+---
 
-Forecasted AQI for upcoming days
+## 📂 Project Structure
 
-Trend shifts and seasonal variations
-
-The dashboard consists of 4 Milestone Dashboards:
-
-Data Cleaning & Visualization
-
-AQI Computation & Category Insights
-
-Prophet-based Forecasting (Dashboard 1 & 2)
-
-ARIMA Forecast + Alerts (Dashboard 3 & 4)
-
-📂 Project Structure
 AirAware/
 │
 ├── main_dashboard.py
@@ -39,70 +36,67 @@ AirAware/
 ├── milestone3_dashboard.py
 ├── milestone4_dashboard.py
 ├── data/
-│   └── air_quality.csv
+│ └── air_quality.csv
 ├── requirements.txt
 └── README.md
 
-🛠️ Features
-🔸 Dashboard 1 – Data Exploration
+yaml
+Copy code
 
-Clean dataset, handle missing values
+---
 
-Time series visualization of pollutants
+## 🛠️ Features
 
-Correlation heatmaps
+### 🔸 **Dashboard 1 – Data Exploration**
+- Clean dataset, handle missing values  
+- Time series visualization of pollutants  
+- Correlation heatmaps  
 
-🔸 Dashboard 2 – AQI Calculation & Category Visualization
+### 🔸 **Dashboard 2 – AQI Calculation & Category Visualization**
+- Compute AQI using pollutant sub-indices  
+- Map AQI values to categories  
+- Compare AQI across cities  
 
-Compute AQI using pollutant sub-indices
+### 🔸 **Dashboard 3 – AQI Forecasting (Prophet)**
+- Predict AQI for next 30 days  
+- Trend + seasonal decomposition  
+- Interactive city selection  
 
-Map AQI values to categories
+### 🔸 **Dashboard 4 – AQI Forecasting (ARIMA) + Alerts**
+- ARIMA-based predictions  
+- Automatic alerts if AQI rises above thresholds  
+- Improved stability for short-term forecasts  
 
-Compare AQI across cities
+---
 
-🔸 Dashboard 3 – AQI Forecasting (Prophet)
+## 📊 Tech Stack
 
-Predict AQI for next 30 days
+| Purpose | Tools |
+|--------|-------|
+| Language | Python |
+| Framework | Streamlit |
+| ML Models | Prophet, ARIMA |
+| Visualization | Plotly, Seaborn, Matplotlib |
+| Data Handling | Pandas, NumPy |
+| Deployment | Streamlit Cloud |
 
-Trend + seasonal decomposition
+---
 
-Interactive city selection
+## ⚙️ Installation
 
-🔸 Dashboard 4 – AQI Forecasting (ARIMA) + Alerts
-
-ARIMA-based predictions
-
-Automatic alerts if AQI rises above thresholds
-
-Improved stability for short-term forecasts
-
-📊 Tech Stack
-Purpose	Tools
-Language	Python
-Framework	Streamlit
-ML Models	Prophet, ARIMA
-Visualization	Plotly, Seaborn, Matplotlib
-Data Handling	Pandas, NumPy
-Deployment	Streamlit Cloud
-⚙️ Installation
-
-Clone the repository:
-
+### **Clone the repository:**
+```bash
 git clone https://github.com/your-username/AirAware.git
 cd AirAware
-
-
 Install dependencies:
-
+bash
+Copy code
 pip install -r requirements.txt
-
-
 Run the Streamlit app:
-
+bash
+Copy code
 streamlit run main_dashboard.py
-
 📁 Dataset
-
 The project uses city-wise daily air quality data with features like:
 
 PM2.5
@@ -123,11 +117,11 @@ Date & Time
 
 Dataset is stored under:
 
+bash
+Copy code
 data/air_quality.csv
-
 🔮 Forecasting Models Used
 ✔️ Prophet Model
-
 Used for:
 
 Long-term AQI forecasting
@@ -137,7 +131,6 @@ Seasonal trend detection
 Handling missing values and irregular intervals
 
 ✔️ ARIMA Model
-
 Used for:
 
 Short-term AQI forecasting
@@ -147,7 +140,6 @@ Validating Prophet results
 Improving forecast stability
 
 🎨 UI / Dashboard Features
-
 Streamlit Option Menu for clean navigation
 
 Multi-page dashboard system
@@ -157,27 +149,30 @@ Responsive charts with Plotly
 Alerts for unhealthy air quality
 
 🚀 Deployment
-
 The app is hosted on Streamlit Community Cloud.
 
 To deploy your own version:
 
 Push your project to GitHub
 
-Visit https://share.streamlit.io
+Visit: https://share.streamlit.io
 
-Select repo → set entry file as main_dashboard.py
+Select your repository
 
-Deploy
+Set entry file as main_dashboard.py
 
-📈 Screenshots (Add yours here)
-![Dashboard 1](image1.png)
-![Dashboard 2](image2.png)
-![Dashboard 3](image3.png)
-![Dashboard 4](image4.png)
+Deploy 🚀
 
+📸 Screenshots
+Add your images in the /images folder and update below:
+
+md
+Copy code
+![Dashboard 1](images/dashboard1.png)
+![Dashboard 2](images/dashboard2.png)
+![Dashboard 3](images/dashboard3.png)
+![Dashboard 4](images/dashboard4.png)
 🧠 Future Enhancements
-
 Real-time AQI API integration
 
 Mobile-friendly version
@@ -189,7 +184,6 @@ LSTM/Deep learning models for improved prediction
 User login + personalized alerts
 
 📚 References
-
 WHO Air Quality Guidelines
 
 CPCB Dataset
@@ -201,6 +195,5 @@ Prophet Official Docs
 Statsmodels ARIMA Docs
 
 👩‍💻 Author
-
 Neha Nayak
 Air Quality Prediction & Visualization Internship Project – 2025
