@@ -151,10 +151,14 @@ To deploy your own version:
 (Add images in an `/images` folder and update paths below)
 
 ```md
-![Dashboard 1](images/dashboard1.png)
-![Dashboard 2](images/dashboard2.png)
-![Dashboard 3](images/dashboard3.png)
-![Dashboard 4](images/dashboard4.png)
+![Dashboard 1](images/screenshot1.png)
+![Dashboard 2](images/screenshot2.png)
+![Dashboard 3](images/screenshot3.png)
+![Dashboard 4](images/screenshot4.png)
+![Dashboard 5](images/screenshot5.png)
+![Dashboard 6](images/screenshot6.png)
+![Dashboard 7](images/screenshot7.png)
+![Dashboard 8](images/screenshot8.png)
 ```
 
 ## 🧠 Future Enhancements
