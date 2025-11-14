@@ -1,3 +1,4 @@
+```md
 # 🌫️ AirAware – Smart Air Quality Prediction & Visualization Dashboard
 
 AirAware is an interactive, Streamlit-based web application designed to analyze, visualize, and forecast Air Quality Index (AQI) across multiple cities.  
@@ -19,6 +20,7 @@ AirAware helps users understand:
 - Trend shifts and seasonal variations  
 
 The dashboard consists of **4 Milestone Dashboards**:
+
 1. Data Cleaning & Visualization  
 2. AQI Computation & Category Insights  
 3. Prophet-based Forecasting (Dashboard 1 & 2)  
@@ -84,15 +86,15 @@ Copy code
 
 ## ⚙️ Installation
 
-### **Clone the repository:**
+### **Clone the repository**
 ```bash
 git clone https://github.com/your-username/AirAware.git
 cd AirAware
-Install dependencies:
+Install dependencies
 bash
 Copy code
 pip install -r requirements.txt
-Run the Streamlit app:
+Run the Streamlit app
 bash
 Copy code
 streamlit run main_dashboard.py
@@ -164,7 +166,7 @@ Set entry file as main_dashboard.py
 Deploy 🚀
 
 📸 Screenshots
-Add your images in the /images folder and update below:
+(Add images in an /images folder and update paths below)
 
 md
 Copy code
@@ -179,7 +181,7 @@ Mobile-friendly version
 
 Geo-mapping of cities (Folium / Mapbox)
 
-LSTM/Deep learning models for improved prediction
+LSTM/Deep learning models
 
 User login + personalized alerts
 
