@@ -150,9 +150,6 @@ To deploy your own version:
 
 ## 📸 Screenshots
 
-(Add images in an `/images` folder and update paths below)
-
-```md
 ![Dashboard 1](images/screenshot1.png)
 ![Dashboard 2](images/screenshot2.png)
 ![Dashboard 3](images/screenshot3.png)
@@ -161,7 +158,7 @@ To deploy your own version:
 ![Dashboard 6](images/screenshot6.png)
 ![Dashboard 7](images/screenshot7.png)
 ![Dashboard 8](images/screenshot8.png)
-```
+
 
 ## 🧠 Future Enhancements
 - Real-time AQI API integration  
