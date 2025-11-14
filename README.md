@@ -82,98 +82,90 @@ Copy code
 | Deployment | Streamlit Cloud |
 
 ---
-
 ## ⚙️ Installation
 
-### **Clone the repository**
+### Clone the repository
 ```bash
 git clone https://github.com/your-username/AirAware.git
 cd AirAware
-Install dependencies
-bash
-Copy code
+```
+### Install dependencies
+```bash
 pip install -r requirements.txt
 Run the Streamlit app
-bash
-Copy code
+```
+
+```bash
 streamlit run main_dashboard.py
-📁 Dataset
+```
+
+## 📁 Dataset
+
 The project uses city-wise daily air quality data with features like:
 
-PM2.5
-
-PM10
-
-NO₂
-
-SO₂
-
-CO
-
-O₃
-
-AQI
-
-Date & Time
+- PM2.5  
+- PM10  
+- NO₂  
+- SO₂  
+- CO  
+- O₃  
+- AQI  
+- Date & Time  
 
 Dataset is stored under:
 
-bash
-Copy code
-data/air_quality.csv
-🔮 Forecasting Models Used
-✔️ Prophet Model
+
+## 🔮 Forecasting Models Used
+
+### ✔️ Prophet Model  
 Used for:
+- Long-term AQI forecasting  
+- Seasonal trend detection  
+- Handling missing values and irregular intervals  
 
-Long-term AQI forecasting
-
-Seasonal trend detection
-
-Handling missing values and irregular intervals
-
-✔️ ARIMA Model
+### ✔️ ARIMA Model  
 Used for:
+- Short-term AQI forecasting  
+- Validating Prophet results  
+- Improving forecast stability  
 
-Short-term AQI forecasting
+---
 
-Validating Prophet results
+## 🎨 UI / Dashboard Features
+- Streamlit Option Menu for clean navigation  
+- Multi-page dashboard system  
+- Responsive charts with Plotly  
+- Alerts for unhealthy air quality  
 
-Improving forecast stability
+---
 
-🎨 UI / Dashboard Features
-Streamlit Option Menu for clean navigation
+## 🚀 Deployment
 
-Multi-page dashboard system
-
-Responsive charts with Plotly
-
-Alerts for unhealthy air quality
-
-🚀 Deployment
-The app is hosted on Streamlit Community Cloud.
+The app is hosted on **Streamlit Community Cloud**.
 
 To deploy your own version:
 
-Push your project to GitHub
+1. Push your project to GitHub  
+2. Visit: https://share.streamlit.io  
+3. Select your repository  
+4. Set entry file as `main_dashboard.py`  
+5. Deploy 🚀  
 
-Visit: https://share.streamlit.io
+---
 
-Select your repository
+## 📸 Screenshots
 
-Set entry file as main_dashboard.py
+(Add images in an `/images` folder and update paths below)
 
-Deploy 🚀
-
-📸 Screenshots
-(Add images in an /images folder and update paths below)
-
-md
-Copy code
+```md
 ![Dashboard 1](images/dashboard1.png)
 ![Dashboard 2](images/dashboard2.png)
 ![Dashboard 3](images/dashboard3.png)
 ![Dashboard 4](images/dashboard4.png)
+```
+
 🧠 Future Enhancements
+
 Real-time AQI API integration
 
 Mobile-friendly version
@@ -185,6 +177,7 @@ LSTM/Deep learning models
 User login + personalized alerts
 
 📚 References
+
 WHO Air Quality Guidelines
 
 CPCB Dataset
@@ -196,5 +189,6 @@ Prophet Official Docs
 Statsmodels ARIMA Docs
 
 👩‍💻 Author
+
 Neha Nayak
 Air Quality Prediction & Visualization Internship Project – 2025
