@@ -150,14 +150,14 @@ To deploy your own version:
 
 ## 📸 Screenshots
 
-![Dashboard 1](images/screenshot1.png)
-![Dashboard 2](images/screenshot2.png)
-![Dashboard 3](images/screenshot3.png)
-![Dashboard 4](images/screenshot4.png)
-![Dashboard 5](images/screenshot5.png)
-![Dashboard 6](images/screenshot6.png)
-![Dashboard 7](images/screenshot7.png)
-![Dashboard 8](images/screenshot8.png)
+![Dashboard 1](images/Screenshot1.png)
+![Dashboard 2](images/Screenshot2.png)
+![Dashboard 3](images/Screenshot3.png)
+![Dashboard 4](images/Screenshot4.png)
+![Dashboard 5](images/Screenshot5.png)
+![Dashboard 6](images/Screenshot6.png)
+![Dashboard 7](images/Screenshot7.png)
+![Dashboard 8](images/Screenshot8.png)
 
 
 ## 🧠 Future Enhancements
